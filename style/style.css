@@ -4,7 +4,7 @@
 
 body {
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, serif;
   margin: 0;
   background-color: #000000;
 }
@@ -59,7 +59,7 @@ a:hover {
   width: 90%;
 	max-width: 700px;
   color: rgb(255, 255, 255); 
-  outline-color: rgb(255, 255, 255);
+  outline-color: rgb(114, 0, 0);
   outline-style: solid;
   outline-width: 1px;
   outline-offset: 0;
@@ -72,7 +72,7 @@ a:hover {
 
 /*HEADER STYLE*/
 #header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(114, 0, 0);
   padding: 0 5%;
 }
 #header ul {
@@ -88,7 +88,7 @@ a:hover {
   margin-top: 0.2em;
 }
 #header li a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   background-color: inherit;
 }

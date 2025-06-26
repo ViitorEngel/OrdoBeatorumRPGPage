@@ -14,9 +14,9 @@
 
 //==[ 1. BASIC INFO ]==
 
-let blogName = "VitonhosBlog";
-let authorName = "Vitor Barros";
-let authorLink = "https://www.instagram.com/vitorengelbarros/"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
+let blogName = "Ordo Beatorum";
+let authorName = "Pe. Adamastor";
+let authorLink = ""; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
 
 //-----------------------------
 
@@ -34,7 +34,7 @@ let postsArray = [
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
 //[ "posts/2020-11-10-My-Third-Post-Example.html" ],
 //[ "posts/2020-11-10-My-Second-Post-Example.html" ],
-[ "posts/Teste.html" ] ];
+[ "posts/Greve na Companhia de Luz.html" ] ];
 
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -62,11 +62,12 @@ if ( url.includes("posts/") ) {
 //Generate the Header HTML, a series of list items containing links.
 let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Home</a></li>' + 
 '<li><a href="' + relativePath + '/archive.html">Arquivo</a></li>' +
+'<li><a href="' + relativePath + '/sistema.html">Sistema</a></li>' +
 '<li><a href="' + relativePath + '/about.html">Sobre</a></li> </ul>';
 
 //Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
 //Note: feel free to remove the references to Zonelets and Neocities! Just be careful not to delete any necessary HTML closing tags or other syntax.
-let footerHTML = "<hr><p>" + blogName + " é escrito por <a href='" + authorLink + "'>" + authorName + "</a> e feito com <a href='https://zonelets.net/'>Zonelets</a>";
+let footerHTML = "</a>Feito com <a href='https://zonelets.net/'>Zonelets</a>";
 
 //To do the following stuff, we want to know where we are in the posts array (if we're currently on a post page).
 let currentIndex = -1;
@@ -152,7 +153,7 @@ postListHTML += "</ul>";
 
 //Generate the Recent Post List HTML, which can be shown on the home page (or wherever you want!)
 let recentPostsCutoff = 3; //Hey YOU! Change this number to set how many recent posts to show before cutting it off with a "more posts" link.
-let recentPostListHTML = "<h2>Posts recentes:</h2><ul>";
+let recentPostListHTML = "<h2>Casos e tópicos recentes</h2><ul>";
 let numberOfRecentPosts = Math.min( recentPostsCutoff, postsArray.length );
 for ( let i = 0; i < numberOfRecentPosts; i++ ) {
   recentPostListHTML += formatPostLink(i);
